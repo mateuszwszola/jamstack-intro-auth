@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { IdentityContextProvider } from 'react-netlify-identity-widget';
+import 'react-netlify-identity-widget/styles.css';
+import { Link } from 'gatsby';
 
 import './layout.css';
 

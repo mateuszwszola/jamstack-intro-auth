@@ -1,6 +1,10 @@
-exports.onCreatePage = ({ page, actions }) => {
+exports.onCreatePage = ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators;
+
   if (page.path.match(/^\/dashboard/)) {
     page.matchPath = '/dashboard/*';
-    actions.createPage(page);
+
+    // update the page
+    createPage(page);
   }
 };
